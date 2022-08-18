@@ -258,23 +258,212 @@ da mu upise ovaj tekst.
 // }
 
 
-// Petlje
 
-// 25 novcaniva
-let novcanice = 25; 
-// 10 Eura vrijednost jedne novcanice
-let vrijednostNovcanice = 10; 
+// While Petlje
 
-// izbrojane novcanice
-let izbrojaneNovcanice = 0;
+// // 25 novcaniva
+// let novcanice = 25; 
+// // 10 Eura vrijednost jedne novcanice
+// let vrijednostNovcanice = 10; 
 
-// broji novcanice sve dok je brojac manji od broja novcanica
-while (izbrojaneNovcanice < novcanice) {
-    izbrojaneNovcanice++;
-}
-console.log(izbrojaneNovcanice * vrijednostNovcanice);
+// // izbrojane novcanice
+// let izbrojaneNovcanice = 0;
+
+// // broji novcanice sve dok je brojac manji od broja novcanica
+// while (izbrojaneNovcanice < novcanice) {
+//     izbrojaneNovcanice++;
+// }
+// console.log(izbrojaneNovcanice * vrijednostNovcanice);
+
 
 
 
 // Petlje i nizovi 
-// 01:27:10 video
+
+// let novcanice = [10, 5, 20, 50, 5, 10, 100, 20, 50, 5, 10, 20];
+// let brojNovcanica = novcanice.length;
+// console.log(brojNovcanica);
+
+// // izbrojane novcanice
+// let izbrojaneNovcanice = 0;
+
+// // broji novcanice sve dok je brojac manji od novcanica
+// while (izbrojaneNovcanice < brojNovcanica) {
+//     izbrojaneNovcanice++;
+// }
+
+// console.log( `Broj izbrojanih novcanica je: ${izbrojaneNovcanice}`);
+
+
+
+
+// Pristupanje indeksu niza
+
+// let novcanice = [10, 5, 20, 50, 5, 10, 100, 20, 50, 5, 10, 20];
+// //console.log(novcanice[0]);
+// let brojNovcanica = novcanice.length;
+// let brojac = 0;
+
+// // while (brojac < brojNovcanica) {
+// //     console.log(novcanice[brojac]);
+// //     brojac++;
+// // }
+// while (brojac < brojNovcanica) {
+//     console.log('-----------');
+//     console.log('Uslov prosao');
+//     console.log(`Novcanica na poziciji ${brojac}: ${novcanice[brojac]}`);
+    
+//     brojac++;
+// }
+
+// console.log('##### Kraj petlje #####');
+
+// if (brojac < brojNovcanica) {
+//     console.log('Brojac je manji');
+// }
+// else {
+//     console.error('Brojac nije manji');
+// }
+
+// console.log(`Brojac: ${brojac}`);
+
+
+
+// For petlje
+
+// let novcanice = [10, 5, 20, 50, 5, 10, 100, 20, 50, 5, 10, 20];
+// let brojNovcanica = novcanice.length;
+// let ukupnoNovca = 0;
+
+// for (brojac = 0; brojac < brojNovcanica; brojac++){
+//     console.log(novcanice[brojac]);
+//     //ukupnoNovca = ukupnoNovca + novcanice[brojac];
+//      ukupnoNovca += novcanice[brojac];
+// };
+// console.log('##### Kraj petlje ######');
+// console.log(`Ukupno novca: ${ukupnoNovca}€`);
+
+
+
+
+// For 2 petlja
+
+// let novcanice = [10, 5, 20, 50, 5, 10, 100, 20, 50, 5, 10, 20];
+
+// for (let brojac in novcanice) {
+//     console.log(brojac);
+//     console.log(novcanice[brojac]);
+//     console.log('-------');
+// };
+
+
+
+
+// For 3 petlja
+
+// let novcanice = [10, 5, 20, 50, 5, 10, 100, 20, 50, 5, 10, 20];
+
+// for (let novcanica of novcanice){
+//     console.log(novcanica);
+// };
+
+
+
+// For 4 petlja
+
+// let automobili = ['Audi', 'BMW', 'Porsche', 'Mercedes'];
+
+// for (let automobil of automobili) {
+//     console.log(automobil);
+// };
+
+
+
+//For each petlja
+
+// let automobili = ['Audi', 'BMW', 'Porsche', 'Mercedes'];
+
+// automobili.forEach(function(automobil) {
+//     console.log(automobil);
+// });
+
+
+
+// Petlje i objekti
+
+
+// let automobili = {
+//    prvi_auto: 'Audi', 
+//     drugi_auto: 'BMW', 
+//     treci_auto: 'Porsche', 
+//     cetvrti_auto: 'Mercedes'
+// };
+// console.log(automobili);
+
+
+
+// let automobili = {
+//   audi: ['50000', '2017', 'Q7'],
+//   bmw: ['60000', '2018', '330D'],
+//   porsche: ['100000', '2016', 'Boxster'],
+//   mercedes: ['70000', '2019', 'S400'],
+// };
+// for (let automobil in automobili) {
+//     console.log(automobil);
+//     console.log(automobili[automobil]);
+//     console.log('---------');
+// }
+// console.log(automobili);
+
+
+
+// let automobili = {
+//     audi: ['50000', '2017', 'Q7'],
+//     bmw: ['60000', '2018', '330D'],
+//     porsche: ['100000', '2016', 'Boxster'],
+//     mercedes: ['70000', '2019', 'S400'],
+//   };
+//   for (let automobil in automobili) {
+//      let naziv = automobil;
+//      //console.log(naziv);
+//      let voziloPodaci = automobili[automobil];
+//      //console.log(voziloPodaci);
+//      console.log(
+//         `Model: ${naziv} ${voziloPodaci[2]},
+//          godiste: ${voziloPodaci[1]},
+//          cijena: ${voziloPodaci[0]}€
+//          `
+//     );     
+//   }
+
+
+
+// let automobili = {
+//     audi: ['50000', '2017', 'Q7'],
+//     bmw: ['60000', '2018', '330D'],
+//     porsche: ['100000', '2016', 'Boxster'],
+//     mercedes: ['70000', '2019', 'S400'],
+//   };
+
+  //console.log(automobili['audi']);
+  //console.log(automobili.audi);
+
+
+
+let osoba = {
+    ime: 'Kerim',
+    prezime: 'Imamovic',
+    godine: '26',
+    grad: 'Sarajevo'
+}
+
+console.log(osoba.ime);
+console.log(`
+    Ime: ${osoba.ime}, 
+    Prezime: ${osoba.prezime}, 
+    Godine: ${osoba.godine},
+    Grad: ${osoba.grad},
+`);
+
+
+// 02:07:50 video
