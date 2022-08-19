@@ -9,6 +9,7 @@
 // console.log(1===2);
 //window.open();
 
+
 // Ovo je komentar u jednoj liniji
 /*Ovo je 
 komentar
@@ -20,11 +21,13 @@ u vise linija
 // Ovo je kod koji ce se ispisati u konzoli
 // console.log('test');
 
+
 /*
 Ovo je kod koji ce da uzme div element preko njegovog id-a i onda ce
 da mu upise ovaj tekst.
 */
 // document.getElementById('poruka').innerText = 'Poruka iz JS fajla';
+
 
 
 
@@ -46,11 +49,13 @@ da mu upise ovaj tekst.
 // console.log(typeof(ukupnoGodina));
 
 
+
 // let prvi_broj = 1;
 // let drugi_broj = '2';
 // drugi_broj = Number(drugi_broj);
 // let rezultat = prvi_broj + drugi_broj;
 // console.log(rezultat);
+
 
 
 // let prvi_broj = 5;
@@ -64,6 +69,7 @@ da mu upise ovaj tekst.
 
 // console.log(prvi_broj);
 // console.log(drugi_broj);
+
 
 
 // Zamjena brojeva
@@ -121,6 +127,7 @@ da mu upise ovaj tekst.
 // let recenica = `Zovem se ${ime}. Prezivam se ${prezime}. Imam ${godina} godina.`;
 
 // console.log(recenica);
+
 
 
 
@@ -259,6 +266,7 @@ da mu upise ovaj tekst.
 
 
 
+
 // While Petlje
 
 // // 25 novcaniva
@@ -278,6 +286,7 @@ da mu upise ovaj tekst.
 
 
 
+
 // Petlje i nizovi 
 
 // let novcanice = [10, 5, 20, 50, 5, 10, 100, 20, 50, 5, 10, 20];
@@ -293,6 +302,7 @@ da mu upise ovaj tekst.
 // }
 
 // console.log( `Broj izbrojanih novcanica je: ${izbrojaneNovcanice}`);
+
 
 
 
@@ -329,6 +339,8 @@ da mu upise ovaj tekst.
 
 
 
+
+
 // For petlje
 
 // let novcanice = [10, 5, 20, 50, 5, 10, 100, 20, 50, 5, 10, 20];
@@ -346,6 +358,7 @@ da mu upise ovaj tekst.
 
 
 
+
 // For 2 petlja
 
 // let novcanice = [10, 5, 20, 50, 5, 10, 100, 20, 50, 5, 10, 20];
@@ -355,6 +368,7 @@ da mu upise ovaj tekst.
 //     console.log(novcanice[brojac]);
 //     console.log('-------');
 // };
+
 
 
 
@@ -369,6 +383,8 @@ da mu upise ovaj tekst.
 
 
 
+
+
 // For 4 petlja
 
 // let automobili = ['Audi', 'BMW', 'Porsche', 'Mercedes'];
@@ -379,6 +395,8 @@ da mu upise ovaj tekst.
 
 
 
+
+
 //For each petlja
 
 // let automobili = ['Audi', 'BMW', 'Porsche', 'Mercedes'];
@@ -386,6 +404,8 @@ da mu upise ovaj tekst.
 // automobili.forEach(function(automobil) {
 //     console.log(automobil);
 // });
+
+
 
 
 
@@ -412,7 +432,7 @@ da mu upise ovaj tekst.
 //     console.log(automobil);
 //     console.log(automobili[automobil]);
 //     console.log('---------');
-// }
+// };
 // console.log(automobili);
 
 
@@ -434,7 +454,7 @@ da mu upise ovaj tekst.
 //          cijena: ${voziloPodaci[0]}€
 //          `
 //     );     
-//   }
+//   };
 
 
 
@@ -450,20 +470,185 @@ da mu upise ovaj tekst.
 
 
 
-let osoba = {
-    ime: 'Kerim',
-    prezime: 'Imamovic',
-    godine: '26',
-    grad: 'Sarajevo'
-}
+// let osoba = {
+//     ime: 'Kerim',
+//     prezime: 'Imamovic',
+//     godine: '26',
+//     grad: 'Sarajevo'
+// }
 
-console.log(osoba.ime);
-console.log(`
-    Ime: ${osoba.ime}, 
-    Prezime: ${osoba.prezime}, 
-    Godine: ${osoba.godine},
-    Grad: ${osoba.grad},
-`);
+// console.log(osoba.ime);
+// console.log(`
+//     Ime: ${osoba.ime}, 
+//     Prezime: ${osoba.prezime}, 
+//     Godine: ${osoba.godine},
+//     Grad: ${osoba.grad},
+// `);
 
 
-// 02:07:50 video
+
+
+
+// Funkcije
+
+// let nekretnine = {
+//   stan : '70000',
+//   kuca: '150000',
+//   plac: '30000',
+// };
+
+// *********************************************************************
+// Stan
+
+// let godine = 10;
+// let mjeseci = godine * 12;
+// let rata = nekretnine.stan / mjeseci;
+// console.log(rata.toFixed(2));
+// rata = rata.toFixed(2);
+
+// console.log(`mjeseci: ${mjeseci}`);
+// console.log(`rata: ${rata}€`);
+// console.log(`Mjesecna rata za stan iznosi ${rata} na ${godine} godina.`);
+
+// ***********************************************************************
+// Plac
+
+// godine = 5;
+// mjeseci = godine * 12;
+// rata = nekretnine.plac / mjeseci;
+
+// console.log('-----------')
+// console.log(`mjeseci: ${mjeseci}`);
+// console.log(`rata: ${rata}€`);
+// console.log(`Mjesecna rata za plac iznosi ${rata} na ${godine} godina.`);
+
+// ***********************************************************************
+// Kuca
+
+// godine = 20;
+// mjeseci = godine * 12;
+// rata = nekretnine.kuca / mjeseci;
+
+// console.log('-----------')
+// console.log(`mjeseci: ${mjeseci}`);
+// console.log(`rata: ${rata}€`);
+// console.log(`Mjesecna rata za kucu iznosi ${rata} na ${godine} godina.`);
+
+
+// Primjer :
+
+// let nekretnine = {
+//   stan : '70000',
+//   kuca: '150000',
+//   plac: '30000',
+// };
+
+
+// // Ova funkcija izracunava mjesecnu ratu za odredenu nekretninu za odredeni broj godina
+
+// function racunanjeMjesecneRate (godine, nekretnina) {
+//   let mjeseci = godine * 12;
+//   let rata = nekretnine[nekretnina] / mjeseci;
+//   // console.log(godine);
+//   // console.log(nekretnina);
+//    //console.log(rata);
+//   rata = rata.toFixed(2);
+//   console.log('--------------------------');
+//   console.log(`Mjesecna rata za ${nekretnina} iznosi ${rata}€ na ${godine} godina`);
+//   //console.log(`mjeseci: ${mjeseci}`);
+// };
+
+// // Proracun za stan na 15 godina
+// racunanjeMjesecneRate(15, 'stan');
+// // Proracun za plac na 5 godina
+// racunanjeMjesecneRate(5, 'plac');
+// // Proracun za kucu na 20 godina
+// racunanjeMjesecneRate(20, 'kuca');
+
+
+// Ova funkcija ce da izracuna mjesecnu ratu za kupovinu 
+// automobila na odredeni vremenski period
+
+// Primjer
+// let automobili = {
+//   'golf': '9000',
+//   'audi': '15000',
+//   'bmw': '20000',
+//   'mercedes': '25000',
+// }
+// console.log(automobili);
+
+// function kupovinaAutomobila (automobil, godina) {
+//   let mjeseci = godina * 12;
+//   let rata = automobili[automobil] / mjeseci;
+//   rata = rata.toFixed(2);
+//   let message = `Rata kredita za ${automobil} iznosi ${rata}€ na period od ${godina} godina.`;
+//   console.log(message); 
+// }
+
+// kupovinaAutomobila('golf', 4);
+
+
+
+
+// ******************************************************************************************************************
+// Selektovanje i upravljanje HTML elementima u Javascriptu
+
+// let auti = document.getElementsByTagName('span');
+
+// for (let auto of auti){
+//   console.log(auto.innerText);
+// }
+
+// // console.log(auti);
+// // console.log(auti[0].innerText);
+// // console.log(auti[1].innerText);
+// // console.log(auti[2].innerText);
+// console.log('----------------------');
+
+// let modeli = document.getElementsByClassName('automobil-model');
+
+// for (let model of modeli) {
+//   console.log(model.innerText);
+// }
+// //console.log(modeli);
+// console.log('----------------------');
+
+// let recenica = document.getElementById('recenica');
+// console.log(recenica.innerText);
+// console.log('-----------------------');
+
+
+// console.log('***************Query selector******************');
+
+// auti = document.querySelectorAll('span');
+// for (let auto of auti) {
+//   console.log(auto.innerText);
+// };
+// //console.log(auti);
+// console.log('-------------------------');
+
+// modeli = document.querySelectorAll('.automobil-model');
+// for (let model of modeli) {
+//   console.log(model.innerText);
+// };
+// //console.log(modeli);
+// console.log('-------------------------');
+
+// recenica = document.querySelector('#recenica');
+// console.log(recenica.innerText);
+
+
+// Selektovanje po elementu po ID-u i brisanje iz HTML-a
+let recenica = document.querySelector('#recenica');
+recenica.remove(); // remcove sluzi za brisanje
+
+// Kreiranje novog div elementa
+let noviElement = document.createElement('div'); // Kreiramo element
+noviElement.classList = 'div-element'; // Dodajemo klasu
+noviElement.innerHTML = '<hr>Pozdrav iz Javascripta.'; // Dodajemo HTML element i tekst
+
+let body = document.querySelector('body'); // Selektujemo body element
+body.appendChild(noviElement); // Na kraju body elementa dodajemo novi element
+
+console.log(noviElement);
