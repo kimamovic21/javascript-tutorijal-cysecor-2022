@@ -640,15 +640,15 @@ da mu upise ovaj tekst.
 
 
 // Selektovanje po elementu po ID-u i brisanje iz HTML-a
-let recenica = document.querySelector('#recenica');
-recenica.remove(); // remcove sluzi za brisanje
+// let recenica = document.querySelector('#recenica');
+// recenica.remove(); // remcove sluzi za brisanje
 
-// Kreiranje novog div elementa
-let noviElement = document.createElement('div'); // Kreiramo element
-noviElement.classList = 'div-element'; // Dodajemo klasu
-noviElement.innerHTML = '<hr>Pozdrav iz Javascripta.'; // Dodajemo HTML element i tekst
+// // Kreiranje novog div elementa
+// let noviElement = document.createElement('div'); // Kreiramo element
+// noviElement.classList = 'div-element'; // Dodajemo klasu
+// noviElement.innerHTML = '<hr>Pozdrav iz Javascripta.'; // Dodajemo HTML element i tekst
 
-let body = document.querySelector('body'); // Selektujemo body element
-body.appendChild(noviElement); // Na kraju body elementa dodajemo novi element
+// let body = document.querySelector('body'); // Selektujemo body element
+// body.appendChild(noviElement); // Na kraju body elementa dodajemo novi element
 
-console.log(noviElement);
+// console.log(noviElement);
