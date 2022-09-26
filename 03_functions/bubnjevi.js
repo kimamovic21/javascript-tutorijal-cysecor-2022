@@ -1,37 +1,30 @@
+// Deklarisanje varijabli
 let crashRide = document.querySelector('#crash-ride');
 let hiHatTop = document.querySelector('#hihat-top');
 
-window.addEventListener("keydown", () => {
-    // console.log(event);
-    let code = event.keyCode;
-    let keyElement = document.querySelector(`div[data-key="${code}"]`);
+// Funkcije za pomjereranje elemenata kad se klikne odredeno dugme
+const animateCrashOrRide = () => {
+    crashRide.style.transform = 'rotate(0deg) scale(1.5)';
+};
 
-    if (!keyElement) {
+const animateHiHatClosed = () => {
+    hiHatTop.style.top = '171px';
+};
+
+window.addEventListener("keydown", (event) => {
+    //console.log(event);
+    let code = event.keyCode;
+    // console.log(code);
+    let keyElement = document.querySelector(`div[data-key="${code}"]`);
+    if (!keyElement) {  // !key element - ne postoji
         console.log('nismo napisali data-key atribut za to slovo');
         return;
-    } 
-    // !key element - ne postoji
-
-    // if (keyElement) {
-    //     console.log('postoji')
-    // }
-    // else {
-    //     console.log('ne postoji');
-    // }
-
+    };
     // console.log(keyElement);
-
+    
     let audio = document.querySelector(`audio[data-key="${code}"]`);
-    audio.currentTime = 0; 
-    audio.play();
-
-    const animateCrashOrRide = () => {
-        crashRide.style.transform = 'rotate(0deg) scale(1.5)';
-    }
-
-    const animateHiHatClosed = () => {
-        hiHatTop.style.top = '171px';
-    }
+    audio.currentTime = 0; // vratiti zvuk na pocetno stanje
+    audio.play(); // funkcija koja pokrece zvuk
 
     // kod da se pomjeri ovaj dio bubnje gdje su slova E i R
     switch(code) {
@@ -40,15 +33,18 @@ window.addEventListener("keydown", () => {
             animateCrashOrRide();
             break;
         case 75:
+        case 73:
             animateHiHatClosed();
             break;
     };
 
-    keyElement.target.classList.add('playing');
-});
+    keyElement.classList.add('playing');
+}); 
 
+// Funkcije za uklanjanje tranzicija
 const removeCrashRideTransition = (event) => {
     if(event.propertyName !== 'transform') {
+        // ako se desilo nesto sto nije transform onda prekidamo
         return;
     };
     event.target.style.transform = 'rotate(-7.2deg) scale(1.5)';
@@ -56,6 +52,7 @@ const removeCrashRideTransition = (event) => {
 
 const removeHiHatTopTransition = (event) => {
     if(event.propertyName !== 'top') {
+        // ako se desilo nesto sto nije top onda prekidamo
         return;
     };
     event.target.style.top = '166px';
@@ -69,10 +66,9 @@ const removeKeyTransition = (event) => {
 };
 
 let drumKeys = document.querySelectorAll('.key');
-
 drumKeys.forEach((key) => {
     key.addEventListener("transitionend", removeKeyTransition)
 });
 
 crashRide.addEventListener("transitionend", removeCrashRideTransition);
-hiHatTop.addEventListener('transitionend', removeHiHatTopTransition);
+hiHatTop.addEventListener("transitionend", removeHiHatTopTransition);
