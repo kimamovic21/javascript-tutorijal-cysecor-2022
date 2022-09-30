@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+    color: #efefef;
+    font-family: sans-serif;
+}
+
+.section {
+    height: 100vh;
+}
+
+.section h2 {
+    text-align: center;
+    margin-top: 250px;
+    font-size: 4rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.section h2 span {
+    opacity: 0;    
+    transition: all 0.3s ease;
+    transform: translateY(50px);
+    display: inline-block;
+    word-wrap: break-word;
+}
+
+.section .fadeMove {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.section2 .images {
+    display: flex;
+    overflow: hidden;
+}
+
+.section2 .images img{
+    width: 40%;
+    transition: all 1s ease;
+    opacity: 1;
+}
+
+.section2 .images img.slideFromLeft{
+     transform: translateX(-100%) ;
+     opacity: 0;
+}
+
+.section2 .images img.slideFromRight{
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+/* klasa koja ce da spoji slike  */
+
+.section2 .images img.animated {
+    transform: translateX(30%);
+    opacity: 1;
+    margin-bottom: 10px;
+}
+
+.section2 h2 {
+   line-height: 1.3;
+   padding-top: 50px;
+   padding-bottom: 50px; 
+   font-size: 3rem;
+   text-transform: capitalize;
+}
+
+.border-line {
+    height: 2px;
+    width: 0%;
+    background-color: #efefef;
+    transition: all 0.5s ease;
+}
