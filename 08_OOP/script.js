@@ -67,28 +67,66 @@
 
 
 
-class Person {
-    constructor(first_name, last_name, phone) {
-        this.first_name = first_name;
-        this.last_name = last_name;
-        this.phone = phone;
+// class Person {
+//     constructor(first_name, last_name, phone) {
+//         this.first_name = first_name;
+//         this.last_name = last_name;
+//         this.phone = phone;
+//     }
+//     getNameAndPhone() {
+//         console.log(`${this.first_name} - ${this.phone}`)
+//     }
+// }
+// console.log(Person);
+
+// let person1 = new Person('Kerim', 'Imamovic', '123456789');
+// console.log(person1);
+// let person2 = new Person('John', 'Doe', '1122334455');
+// console.log(person2);
+
+// console.log(person1.last_name);
+// console.log(person2.last_name)
+
+// person1.getNameAndPhone();
+// person2.getNameAndPhone();
+
+
+let config = {
+    'ime_prezime': {
+        required: true,
+        minlength: 3,
+        maxlength: 50,
+    },
+    'korisnicko_ime': {
+        required: true,
+        minlength: 5,
+        maxlength: 50
+    },
+    'email': {
+        required: true,
+        email: true,
+        minlength: 5,
+        maxlength: 50
+    },
+    'broj_telefona': {
+        required: false,
+        minlength: 9,
+        maxlength: 13
+    },
+    'lozinka': {
+        required: true,
+        minlength: 7,
+        maxlength: 30,
+        matching: 'ponovi_lozinku'
+    },
+    'ponovi_lozinku': {
+        required: true,
+        minlength: 7,
+        maxlength: 30,
+        matching: 'lozinka'
     }
-    getNameAndPhone() {
-        console.log(`${this.first_name} - ${this.phone}`)
-    }
-}
-console.log(Person);
+};
+// console.log(config);
 
-let person1 = new Person('Kerim', 'Imamovic', '123456789');
-console.log(person1);
-let person2 = new Person('John', 'Doe', '1122334455');
-console.log(person2);
+let validator = new Validator(config);
 
-console.log(person1.last_name);
-console.log(person2.last_name)
-
-person1.getNameAndPhone();
-person2.getNameAndPhone();
-
-
-// video 25:10
