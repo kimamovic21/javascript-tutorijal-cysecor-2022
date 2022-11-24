@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drustvena mreza</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+    <div class="logo">
+        <img src="img/logo.jpg" alt="Logo">
+    </div>
+
+    <h1>Moja društvena mreža</h1>
+
+    <div class="main-wrapper">
+        <form id="loginForm">
+            <h2>Login</h2>
+            <div>
+                <label for="korisnicko_ime">Korisničko ime: </label>
+                <input type="text" name="korisnicko_ime" id="korisnicko_ime" placeholder="Unesite korisničko ime">
+            </div>
+            <div>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="login_email" placeholder="Unesite email adresu">
+            </div>
+            <div>
+                <label for="lozinka">Lozinka: </label>
+                <input type="password" name="lozinka" id="login_lozinka" placeholder="*******">
+            </div>
+            <div>
+                <button>Uloguj se</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="no-acc-register">
+        <p>Nemaš nalog?</p>
+        <button id="registracija">Registruj se</button>
+    </div>
+
+    <div class="custom-modal" id="customModal">
+        <button id="closeModal">X</button>
+        <form id="registrationForm">
+            <h2>Registracija korisnika</h2>
+                <div>
+                    <label for="register_korisnicko_ime">Korisničko ime: </label>
+                    <input type="text" name="username" id="register_korisnicko_ime" placeholder="Unesite korisničko ime">
+                </div>
+                <div>
+                    <label for="register_email">Email: </label>
+                    <input type="email" name="email" id="register_email" placeholder="Unesite email adresu">
+                </div>
+                <div>
+                    <label for="register_lozinka">Lozinka: </label>
+                    <input type="password" name="lozinka" id="register_lozinka" placeholder="*******">
+                </div>
+                <div>
+                    <label for="ponovi_lozinku">Ponovi lozinku: </label>
+                    <input type="password" name="ponovi_lozinku" id="ponovi_lozinku" placeholder="*******">
+                </div>
+                <div>
+                    <button>Registruj se</button>
+                </div>
+        </form>
+    </div>
+
+    <script src="js/validator.js"></script>
+    <script src="js/script.js"></script>
+    <!-- video 34:00 -->
+</body>
+
+</html>
+
+

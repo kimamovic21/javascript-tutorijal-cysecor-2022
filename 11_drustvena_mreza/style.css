@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333;
+    font-family: sans-serif;
+    padding: 2rem;
+    color: #f2f2f2;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.logo img {
+    width: 7%;
+    border-radius: 100%;
+}
+
+
+/************************** Form div *******************/
+
+.main-wrapper {
+    max-width: 650px;
+    margin: 0 auto;
+    background-color: rgba(255,255,255,0.2);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.main-wrapper #loginForm h2 {
+    margin-bottom: 1rem;
+}
+
+.main-wrapper #loginForm div {
+    padding: 1rem;
+}
+
+.main-wrapper #loginForm div label {
+    display: block;
+    font-weight: 900;
+    font-size: 1.1rem;
+}
+
+.main-wrapper #loginForm div input {
+    height: 2rem;
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 1rem;
+}
+
+.main-wrapper #loginForm button {
+    cursor: pointer;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+/********************* Nemas nalog ******************/
+
+.no-acc-register {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.no-acc-register button {
+    cursor: pointer;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+}
+
+.no-acc-register p {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+
+/********************** Registruj se forma *************/
+
+.custom-modal {
+    display: none;
+    background-color: #333;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1000px 1000px rgba(255,255,255,0.8);
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 2rem;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.custom-modal #registrationForm h2 {
+    margin-bottom: 1rem;
+}
+
+.custom-modal #registrationForm div {
+    padding: 1rem;
+}
+
+.custom-modal #registrationForm div label {
+    display: block;
+    font-weight: 900;
+    font-size: 1.1rem;
+}
+
+.custom-modal #registrationForm div input {
+    height: 2rem;
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 1rem;
+}
+
+.custom-modal #registrationForm button {
+    cursor: pointer;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+#closeModal {
+    cursor: pointer;
+    height: 2rem;
+    width: 2rem;
+    color: #f2f2f2;
+    background-color: red;
+    border: none;
+    border-radius: 100%;
+    font-size: 1.2rem;
+    font-weight: 900;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
